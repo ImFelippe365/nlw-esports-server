@@ -4,18 +4,25 @@
 <p align="center">
   <img src="https://github.com/ImFelippe365/nlw-esports-mobile/blob/main/src/assets/logo-nlw-esports%402x.png" />
 </p>
+<h4 align="center"> 
+    :construction:  Projeto em construção  :construction:
+</h4>
 <br />
 
 Aplicação back-end para surprir as necessidades de dados das demais plataformas desenvolvidas que são citadas mais abaixo. 
 Este sistema é capaz de listar os jogos disponíveis, seus respectivos anúncios e cadastrar novos anúncios de um jogo.
 
 Durante o evento do NLW da Rocketseat, essa foi a aplicação a ser desenvolvida durante o evento.
-E ao decorrer dos 6 dias, este foi o resultado final da parte do back-end.
-
+<!-- E ao decorrer dos 6 dias, este foi o resultado final da parte do back-end. -->
 Além do atual projeto, foi desenvolvido uma aplicação mobile e para web, na qual requisitam os dados para essa API.
 
-- **[NLW eSports Mobile](https://github.com/ImFelippe365/nlw-esports-mobile)**
-- **[NLW eSports Web](https://github.com/ImFelippe365/nlw-esports-web)**
+<!--
+- :construction: **[NLW eSports Mobile](https://github.com/ImFelippe365/nlw-esports-mobile)**
+- :construction: **[NLW eSports Web](https://github.com/ImFelippe365/nlw-esports-web)**
+-->
+
+- :construction: **NLW eSports Mobile**
+- :construction: **NLW eSports Web**
 
 ## Tecnologias utilizadas no projeto
 
@@ -79,7 +86,7 @@ Saída:
 ]
 ```
 
-### Listar discord do jogador conteado
+### Listar discord do jogador conectado
 
 ```ts
 get('/ads/id/discord')
