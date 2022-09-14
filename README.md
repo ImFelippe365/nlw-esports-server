@@ -1,4 +1,4 @@
-# NLW eSports Back-End ![Badge](https://img.shields.io/static/v1?label=prisma&message=5.4.8&color=white&style=flat&logo=PRISMA) ![Badge](https://img.shields.io/static/v1?label=nodejs&message=v16.13.2&color=green&style=flat&logo=NODE) ![Badge](https://img.shields.io/static/v1?label=typescript&message=v4.8.3&color=blue&style=flat&logo=TYPESCRIPT)
+# NLW eSports Back-End ![Badge](https://img.shields.io/static/v1?label=prisma&message=5.4.8&color=white&style=flat&logo=PRISMA) ![Badge](https://img.shields.io/static/v1?label=express&message=4.18.1&color=white&style=flat&logo=EXPRESS) ![Badge](https://img.shields.io/static/v1?label=nodejs&message=v16.13.2&color=green&style=flat&logo=NODE) ![Badge](https://img.shields.io/static/v1?label=typescript&message=v4.8.3&color=blue&style=flat&logo=TYPESCRIPT)
  
 <br />
 <p align="center">
@@ -27,6 +27,7 @@ Além do atual projeto, foi desenvolvido uma aplicação mobile e para web, na q
 ## Tecnologias utilizadas no projeto
 
 - Prisma
+- Express
 - NodeJS
 - TypeScript
 
