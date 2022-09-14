@@ -35,22 +35,23 @@ get('/games/')
 Saída:
 ```json
 [
-	{
-		"id": "e5bdc648-c1bf-4cc1-8721-a548d58775b5",
-		"title": "League of Legends",
-		"bannerUrl": "https://static-cdn.jtvnw.net/ttv-boxart/21779-285x380.jpg",
-		"_count": {
-			"ads": 0
-		}
-	},
-	{
-		"id": "6cf741e6-9893-44a8-931f-414b083de6aa",
-		"title": "Minecraft",
-		"bannerUrl": "https://static-cdn.jtvnw.net/ttv-boxart/27471_IGDB-285x380.jpg",
-		"_count": {
-			"ads": 0
-		}
- },
+  {
+    "id": "e5bdc648-c1bf-4cc1-8721-a548d58775b5",
+    "title": "League of Legends",
+    "bannerUrl": "https://static-cdn.jtvnw.net/ttv-boxart/21779-285x380.jpg",
+    "_count": {
+      "ads": 0
+    }
+  },
+  {
+    "id": "6cf741e6-9893-44a8-931f-414b083de6aa",
+    "title": "Minecraft",
+    "bannerUrl": "https://static-cdn.jtvnw.net/ttv-boxart/27471_IGDB-285x380.jpg",
+    "_count": {
+      "ads": 0
+    }
+  },
+  {...}
 ]
 ```
 
@@ -63,19 +64,74 @@ get('/games/id/ads')
 Saída:
 ```json
 [
- {
-		"id": "c8e82ced-6878-4cad-8ea0-466320de00ff",
-		"name": "ImFelippe365",
-		"weekDays": [
-			"0",
-			"6"
-		],
-		"useVoiceChannel": true,
-		"yearsPlaying": 2,
-		"hoursStart": "13:00",
-		"hoursEnd": "18:00"
-	}
+  {
+    "id": "c8e82ced-6878-4cad-8ea0-466320de00ff",
+    "name": "ImFelippe365",
+    "weekDays": [
+      "0", "6"
+    ],
+    "useVoiceChannel": true,
+    "yearsPlaying": 2,
+    "hoursStart": "13:00",
+    "hoursEnd": "18:00"
+  },
+  {...}
 ]
+```
+
+### Listar discord do jogador conteado
+
+```ts
+get('/ads/id/discord')
+```
+
+Saída:
+```json
+{
+  "discord": "ImFelippe365#2814"
+}
+```
+
+### Criar novo anúncio
+
+```ts
+post('/games/gameId/ads')
+```
+
+#### Params
+
+``gameId`` - ID do jogo que o anúncio será criado
+
+#### Body
+
+``name`` - Nome do jogador (string)
+
+``yearsPlaying`` - Por quantos anos já jogou (number)
+
+``discord`` - Nome de usuário do discord (string)
+
+``weekDays`` - Dias da semana em que joga (number[])
+
+``hoursStart`` - Horário que começa a jogar (string)
+
+``hoursEnd`` - Horário que para de jogar (string)
+
+``useVoiceChannel`` - Se utiliza canal de voz para comunição (boolean)
+
+
+#### Entrada
+A requisição deve ter o corpo parecido com este:
+
+```json
+{
+  "name": "Felippe Rian",
+  "yearsPlaying": 2,
+  "discord": "ImFelippe365#2814",
+  "weekDays": [0, 6],
+  "hoursStart": "18:00",
+  "hoursEnd": "23:00",
+  "useVoiceChannel": true
+}
 ```
 
 ## Instalação
@@ -92,7 +148,7 @@ ou se preferir:
 yarn install
 ```
 
-## Executar
+## Execução
 
 E por fim, para executar o projeto basta inserir o seguinte comando:
 
@@ -103,5 +159,5 @@ npm run dev
 ou se preferir:
 
 ```
-yarn dev
+yarn run dev
 ```
