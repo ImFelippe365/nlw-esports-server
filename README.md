@@ -4,9 +4,6 @@
 <p align="center">
   <img src="https://github.com/ImFelippe365/nlw-esports-mobile/blob/main/src/assets/logo-nlw-esports%402x.png" />
 </p>
-<h4 align="center"> 
-    :construction:  Projeto em construção  :construction:
-</h4>
 <br />
 
 Aplicação back-end para surprir as necessidades de dados das demais plataformas desenvolvidas que são citadas mais abaixo. 
@@ -16,13 +13,8 @@ Durante o evento do NLW da Rocketseat, essa foi a aplicação a ser desenvolvida
 <!-- E ao decorrer dos 6 dias, este foi o resultado final da parte do back-end. -->
 Além do atual projeto, foi desenvolvido uma aplicação mobile e para web, na qual requisitam os dados para essa API.
 
-<!--
-- :construction: **[NLW eSports Mobile](https://github.com/ImFelippe365/nlw-esports-mobile)**
-- :construction: **[NLW eSports Web](https://github.com/ImFelippe365/nlw-esports-web)**
--->
-
-- :construction: **NLW eSports Mobile**
-- :construction: **NLW eSports Web**
+- **[NLW eSports Mobile](https://github.com/ImFelippe365/nlw-esports-mobile)**
+- **[NLW eSports Web](https://github.com/ImFelippe365/nlw-esports-web)**
 
 ## Tecnologias utilizadas no projeto
 
@@ -30,6 +22,34 @@ Além do atual projeto, foi desenvolvido uma aplicação mobile e para web, na q
 - Express
 - NodeJS
 - TypeScript
+
+## Instalação
+
+Para instalar e usar pelo repositório, clone o repositório e instale as dependências usando o seguinte comando no diretório raiz.
+
+```
+npm install
+```
+
+ou se preferir:
+
+```
+yarn install
+```
+
+## Execução
+
+E por fim, para executar o projeto basta inserir o seguinte comando:
+
+```
+npm run dev
+```
+
+ou se preferir:
+
+```
+yarn run dev
+```
 
 ## Rotas
 Importante ressaltar que localmente a url para acesso é ``localhost:3333``, caso o repositório seja hospedado em um servidor é necessário revisar essas informações na hora de usufruir da API.
@@ -140,32 +160,4 @@ A requisição deve ter o corpo parecido com este:
   "hoursEnd": "23:00",
   "useVoiceChannel": true
 }
-```
-
-## Instalação
-
-Para instalar e usar pelo repositório, clone o repositório e instale as dependências usando o seguinte comando no diretório raiz.
-
-```
-npm install
-```
-
-ou se preferir:
-
-```
-yarn install
-```
-
-## Execução
-
-E por fim, para executar o projeto basta inserir o seguinte comando:
-
-```
-npm run dev
-```
-
-ou se preferir:
-
-```
-yarn run dev
 ```
